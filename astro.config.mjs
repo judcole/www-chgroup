@@ -1,10 +1,11 @@
 // @ts-check
 
-import svelte from '@astrojs/svelte';
-import { defineConfig } from 'astro/config';
+import svelte from "@astrojs/svelte";
+import { defineConfig } from "astro/config";
 
-// https://astro.build/config
+import sitemap from "@astrojs/sitemap";
+
 export default defineConfig({
-	// Enable Svelte to support Svelte components.
-	integrations: [svelte()],
+  site: "https://www.codehealergroup.com",
+  integrations: [svelte(), sitemap()],
 });

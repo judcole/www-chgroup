@@ -1,11 +1,21 @@
-# Astro + Svelte Example
+# Code Healer Group Astro & Tailwind CSS Website
 
-```sh
-pnpm create astro@latest -- --template framework-svelte
-```
+## Commands
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/framework-svelte)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/framework-svelte)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/framework-svelte/devcontainer.json)
+All commands are run from the root of the project, from a terminal:
 
-This example showcases Astro working with [Svelte](https://svelte.dev/).
+| Command                 | Action                                           |
+| :---------------------- | :----------------------------------------------- |
+| `pnpm install`          | Installs dependencies                            |
+| `pnpm run astro --help` | Get help using the Astro CLI                     |
+| `pnpm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
+| `pnpm run build`        | Build your production site to `./dist/`          |
+| `pnpm run dev`          | Starts local dev server at `localhost:4321`      |
+| `pnpm run preview`      | Preview your build locally, before deploying     |
+
+## Todo
+
+- Add deployment automation
+- Add unit tests
+- Add code coverage
+-

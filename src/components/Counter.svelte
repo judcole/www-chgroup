@@ -17,7 +17,7 @@
 	}
 </script>
 
-<div class="counter">
+<div class="counter" hidden="until-found">
 	<button onclick={subtract}>-</button>
 	<pre>{count}</pre>
 	<button onclick={add}>+</button>
