@@ -5,6 +5,7 @@ import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
 
 import sitemap from "@astrojs/sitemap";
+import starlightCatppuccin from "@catppuccin/starlight";
 
 export default defineConfig({
   site: "https://www.codehealergroup.com",
@@ -30,6 +31,12 @@ export default defineConfig({
         },
       ],
       customCss: ["./src/styles/global.css"],
+      plugins: [
+        starlightCatppuccin({
+          dark: { flavor: "macchiato", accent: "mauve" },
+          light: { flavor: "latte", accent: "mauve" },
+        }),
+      ],
       sidebar: [
         {
           label: "Guides",
