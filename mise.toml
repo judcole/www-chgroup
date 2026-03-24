@@ -1,0 +1,23 @@
+# 2026-03-23	mise-en-place configuration
+
+[env]
+NPM = 'pnpm'
+
+[hooks]
+enter = { task = "enter" }
+
+[tasks.enter]
+run = '''
+ls -alt --color
+echo ''
+mise shell-alias
+echo ''
+'''
+
+[shell_alias]
+bld = "${NPM} run build"
+check = "${NPM} run check"
+clean = "${NPM} run clean"
+dev = "${NPM} run dev"
+fmtchk = "${NPM} run fmt:check"
+fmtfix = "${NPM} run fmt:fix"
