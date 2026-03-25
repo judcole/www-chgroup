@@ -15,10 +15,8 @@ All commands are run from the root of the project, from a terminal:
 
 ## Todo
 
-- Add dark and Light theming (astro-theme-toggle?)
 - Add checkcss
 - Add puppeteer (automation?)
-- Add deployment automation
 - Add unit tests
 - Add code coverage
 -

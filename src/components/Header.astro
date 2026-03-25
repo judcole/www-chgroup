@@ -1,0 +1,34 @@
+---
+// import type { Props } from '@astrojs/starlight/props';
+// import type { StarlightRouteData } from '@astrojs/starlight/route-data';
+import Default from '@astrojs/starlight/components/Header.astro';
+---
+
+<Default {...Astro.locals.starlightRoute}>
+  <slot name="title" slot="title" />
+  <slot name="search" slot="search" />
+  <slot name="social" slot="social" />
+  <slot name="theme-toggle" slot="theme-toggle" />
+  <slot name="language-select" slot="language-select" />
+</Default>
+<div class="custom-header-links sl-hidden md:sl-flex">
+  <a href="/about/">About</a>
+  <a href="/contact/">Contact</a>
+</div>
+
+<style>
+  .custom-header-links {
+    margin-inline-start: auto;
+    gap: 1rem;
+    align-items: center;
+    padding-inline-end: 1rem;
+  }
+  .custom-header-links a {
+    text-decoration: none;
+    color: var(--sl-color-text-accent);
+    font-size: var(--sl-text-sm);
+  }
+  .custom-header-links a:hover {
+    color: var(--sl-color-text);
+  }
+</style>
