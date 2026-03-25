@@ -5,7 +5,7 @@
   "scripts": {
     "astro": "astro",
     "build": "astro build",
-    "check": "astro check",
+    "check": "astro check && tsc --project tsconfig.json --noEmit",
     "clean": "rm -rf ./.astro && rm -rf ./dist && rm -rf ./node_modules && rm -rf pnpm-lock.yaml && rm -rf *.lock ; rm -rf *.log",
     "dev": "astro dev",
     "fmt:check": "oxfmt --check .",
