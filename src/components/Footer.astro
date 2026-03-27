@@ -1,15 +1,14 @@
 ---
-// 2026-03-26 Footer component
-// import type { Props } from '@astrojs/starlight/props';
-// import type { StarlightRouteData } from '@astrojs/starlight/route-data';
-import Default from '@astrojs/starlight/components/Footer.astro';
+// 2026-03-27 Footer component
 ---
 
-<Default {...Astro.locals.starlightRoute}><slot /></Default>
 <div class="custom-footer">
-  <a href="/about/">About</a> |
   <a href="/contact/">Contact Us</a> |
+  <a href="/about/">About</a> |
   <a href="/privacy/">Privacy Policy</a>
+</div>
+<div class="custom-footer-copyright">
+  © 2002-2026 Code Healer Group, LLC. All rights reserved.
 </div>
 
 <style>
@@ -21,10 +20,14 @@ import Default from '@astrojs/starlight/components/Footer.astro';
     border-top: 1px solid var(--sl-color-hairline);
   }
   .custom-footer a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--sl-color-text-accent);
   }
   .custom-footer a:hover {
     color: var(--sl-color-text);
+  }
+  .custom-footer-copyright {
+    margin-top: 0;
+    text-align: center;
   }
 </style>
