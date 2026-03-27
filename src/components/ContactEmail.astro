@@ -1,0 +1,11 @@
+---
+// 2026-03-26 Obfuscated email address for contact
+
+const {contact} = Astro.props;
+const suffix = 'healergroup.com';
+
+function get_it(contact: string) {
+    return contact + String.fromCharCode(64) + 'code' + suffix;
+}
+---
+<a href={`mailto:${get_it(contact)}`}>{get_it('info')}</a>

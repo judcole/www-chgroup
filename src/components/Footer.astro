@@ -1,4 +1,5 @@
 ---
+// 2026-03-26 Footer component
 // import type { Props } from '@astrojs/starlight/props';
 // import type { StarlightRouteData } from '@astrojs/starlight/route-data';
 import Default from '@astrojs/starlight/components/Footer.astro';
@@ -6,8 +7,8 @@ import Default from '@astrojs/starlight/components/Footer.astro';
 
 <Default {...Astro.locals.starlightRoute}><slot /></Default>
 <div class="custom-footer">
-  <a href="/about/">About</a>
-  <a href="/contact/">Contact Us</a>
+  <a href="/about/">About</a> |
+  <a href="/contact/">Contact Us</a> |
   <a href="/privacy/">Privacy Policy</a>
 </div>
 
