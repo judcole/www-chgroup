@@ -7,3 +7,15 @@ body {
 body {
   padding: 2rem;
 }
+
+@layer starlight.core {
+  /* Expand main frame to the left */
+  .main-frame {
+    padding-inline-start: 5% !important;
+  }
+
+  /* Hide sidebar pane */
+  .sidebar-pane {
+    width: 0 !important;
+  }
+}
