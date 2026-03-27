@@ -1,6 +1,16 @@
 ---
+date: 2026-03-25
 title: Contact Code Healer Group
 description: How to get in touch with us.
+sidebar:
+    hidden: true
 ---
 
-You can reach us by email at `info@codehealergroup.com`.
+import ContactEmail from "../../components/ContactEmail.astro"
+import { Icon } from "astro-icon/components"
+
+<div style="display:inline">
+    [//]: # (<!-- oxfmt-ignore -->)
+    Please contact us by{" "}<Icon name="fa7-regular:envelope" style="color:purple;display:inline;vertical-align:middle" />{" "}
+    email at <ContactEmail contact="info" /> if you have any questions that were not answered by the website.
+</div>

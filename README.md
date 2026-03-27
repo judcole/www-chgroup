@@ -1,4 +1,6 @@
-# Code Healer Group Astro & Tailwind CSS Website
+---
+title: Code Healer Group Astro & Tailwind CSS Website
+---
 
 ## Commands
 
@@ -15,8 +17,24 @@ All commands are run from the root of the project, from a terminal:
 
 ## Todo
 
-- Add checkcss
 - Add puppeteer (automation?)
 - Add unit tests
 - Add code coverage
 -
+
+## References and Useful Links
+
+- Astro
+  - [Components](https://docs.astro.build/en/basics/astro-components/)
+  - [Configuration](https://docs.astro.build/en/reference/configuration-reference/)
+  - [Integrations](https://astro.build/integrations/)
+  - Astro-Icon
+    - [Source](https://github.com/natemoo-re/astro-icon)
+    - [Available icons](https://icon-sets.iconify.design/)
+    - [FontAwesome icons](https://icon-sets.iconify.design/fa7-regular/)
+  - Catppuccin theme
+    - [Configuration](https://starlight.catppuccin.com/configuration/)
+  - Starlight
+    - [Icons reference](https://starlight.astro.build/reference/icons/)
+    - [Plugins and Integrations](https://starlight.astro.build/resources/plugins/)
+    - [Customizing Astro Starlight Sidebar for Gated Content with Authentication](https://lirantal.com/blog/customizing-astro-starlight-sidebar-gated-content-auth)
