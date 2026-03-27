@@ -1,4 +1,4 @@
-# 2026-03-24	mise-en-place configuration
+# 2026-03-26	mise-en-place configuration
 
 [env]
 LOCAL_FOLDER = 'dist'
@@ -19,6 +19,7 @@ echo ''
 '''
 
 [shell_alias]
+als = "mise shell-alias"
 bld = "${NPM} run build"
 check = "${NPM} run check"
 clean = "${NPM} run clean"
