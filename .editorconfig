@@ -1,0 +1,16 @@
+# <<<<<<2026-03-26	Editor configuration
+
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{js,json,yml}]
+charset = utf-8
+indent_size = 2
+
+[Makefile]
+indent_style = tab
