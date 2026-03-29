@@ -5,7 +5,8 @@
   "scripts": {
     "astro": "astro",
     "build": "astro build",
-    "check": "astro check && tsc --project tsconfig.json --noEmit && eslint . && git secrets --scan --recursive",
+    "check": "astro check && eslint . && tsc --project tsconfig.json --noEmit",
+    "check:secrets": "git secrets --scan --recursive && gitleaks git && trufflehog git file://.",
     "clean": "rm -rf ./.astro && rm -rf ./dist && rm -rf ./node_modules && rm -rf pnpm-lock.yaml && rm -rf *.lock ; rm -rf *.log",
     "dev": "astro dev",
     "fmt:check": "oxfmt --check .",
