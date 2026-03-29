@@ -1,4 +1,5 @@
 ---
+date: 2026-03-28
 title: Code Healer Group Astro & Tailwind CSS Website
 ---
 
@@ -17,10 +18,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## Todo
 
-- Add puppeteer (automation?)
-- Add unit tests
-- Add code coverage
--
+- Conditional definitions based on URL domain to allow multiple sites
 
 ## References and Useful Links
 
