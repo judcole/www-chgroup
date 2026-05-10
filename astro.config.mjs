@@ -1,4 +1,4 @@
-// 2026-03-26 Main Astro configuration
+// 2026-04-27 Main Astro configuration
 
 import sitemap from "@astrojs/sitemap"
 import starlight from "@astrojs/starlight"
@@ -72,6 +72,8 @@ export default defineConfig({
           light: { flavor: "latte", accent: "mauve" },
         }),
         starlightFullViewMode({
+          // node_modules/starlight-fullview-mode/index.ts
+          //   .default({leftSidebarEnabled: true, rightSidebarEnabled: true, leftSidebarCollapsedWidth: "50px", rightSidebarCollapsedWidth: "50px", leftSidebarExpandedWidth: null, rightSidebarExpandedWidth: null, rotateSidebarToggleWhenClosed: true, overrideWarnEnabled: false});
           //   leftSidebarEnabled: true,
           //   rightSidebarEnabled: true,
           //   leftSidebarExpandedWidth: "5%",

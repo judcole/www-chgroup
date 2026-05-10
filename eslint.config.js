@@ -1,3 +1,7 @@
+/*
+    2026-04-27 ESLint configuration
+*/
+
 import eslint from "@eslint/js"
 import eslintPluginAstro from "eslint-plugin-astro"
 import eslintPluginSvelte from "eslint-plugin-svelte"
@@ -18,6 +22,9 @@ export default defineConfig(
         parser: tseslint.parser,
         extraFileExtensions: [".svelte"],
       },
+    },
+    plugins: {
+      eslintPluginAstro,
     },
   },
   {

@@ -1,11 +1,24 @@
+/*
+    2026-04-27 TypeScript configuration
+*/
+
 {
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "sourceMap": true,
-    "checkJs": true
-  },
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
+    "extends": "astro/tsconfigs/base",
+    "compilerOptions": {
+        "checkJs": true,
+        "paths": {
+            "@components/*": ["./src/components/*"],
+            "@layouts/*": ["./src/layouts/*"]
+        },
+        "plugins": [
+            {
+                "name": "@astrojs/ts-plugin"
+            }
+        ],
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "strictNullChecks": true,
+        "verbatimModuleSyntax": true
+    }
 }
