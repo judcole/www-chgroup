@@ -1,54 +1,62 @@
 {
-  "name": "chg-website",
-  "version": "0.0.1",
-  "type": "module",
-  "scripts": {
-    "astro": "astro",
-    "build": "astro build",
-    "check": "astro check && eslint . && tsc --project tsconfig.json --noEmit",
-    "check:secrets": "git secrets --scan --recursive && gitleaks dir -v . && trufflehog filesystem .",
-    "check:secrets:git": "git secrets --scan-history && gitleaks git -v . && trufflehog git file://.",
-    "clean": "rm -rf ./.astro && rm -rf ./dist && rm -rf ./node_modules && rm -rf pnpm-lock.yaml && rm -rf *.lock ; rm -rf *.log",
-    "dev": "astro dev",
-    "fmt:check": "oxfmt --check .",
-    "fmt:fix": "oxfmt --write .",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "preview": "astro preview",
-    "start": "astro dev",
-    "update": "pnpm update --latest",
-    "upgrade": "pnpm dlx @astrojs/upgrade"
-  },
-  "dependencies": {
-    "@astrojs/check": "^0.9.8",
-    "@astrojs/sitemap": "^3.7.2",
-    "@astrojs/starlight": "^0.38.2",
-    "@astrojs/svelte": "^8.0.4",
-    "@catppuccin/starlight": "^2.0.1",
-    "astro": "^6.1.1",
-    "astro-icon": "^1.1.5",
-    "components": "^0.1.0",
-    "starlight-fullview-mode": "^0.2.6",
-    "svelte": "^5.55.0",
-    "typescript": "^6.0.2"
-  },
-  "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "@iconify-json/fa7-regular": "^1.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.57.2",
-    "@typescript-eslint/parser": "^8.57.2",
-    "astro-eslint-parser": "^1.4.0",
-    "eslint": "^10.1.0",
-    "eslint-plugin-astro": "^1.6.0",
-    "eslint-plugin-svelte": "^3.16.0",
-    "oxfmt": "^0.42.0",
-    "starlight-links-validator": "^0.21.0",
-    "svelte-eslint-parser": "^1.6.0",
-    "typescript-eslint": "^8.57.2",
-    "vite": "^8.0.3"
-  },
-  "engines": {
-    "node": ">=22.12.0"
-  },
-  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319"
+    "name": "chg-website",
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {
+        "astro": "astro",
+        "build": "astro build",
+        "check": "eslint . && astro check && tsc --project tsconfig.json --noEmit",
+        "check:secrets": "git secrets --scan --recursive && gitleaks dir -v . && trufflehog filesystem .",
+        "check:secrets:git": "git secrets --scan-history && gitleaks git -v . && trufflehog git file://.",
+        "clean": "rm -rf ./.astro && rm -rf ./dist && rm -rf ./node_modules && rm -rf pnpm-lock.yaml && rm -rf *.lock ; rm -rf *.log",
+        "dev": "astro dev",
+        "fmt:check": "oxfmt --check .",
+        "fmt:fix": "oxfmt --write .",
+        "lint": "oxlint --type-aware",
+        "lint:fix": "oxlint --type-aware --fix",
+        "preview": "astro preview",
+        "start": "astro dev",
+        "update": "pnpm update --latest",
+        "upgrade": "pnpm dlx @astrojs/upgrade"
+    },
+    "dependencies": {
+        "@astrojs/sitemap": "^3.7.2",
+        "@astrojs/starlight": "^0.38.4",
+        "@astrojs/svelte": "^8.0.5",
+        "@catppuccin/starlight": "^2.0.1",
+        "astro": "^6.1.9",
+        "astro-icon": "^1.1.5",
+        "components": "^0.1.0",
+        "starlight-fullview-mode": "^0.2.6",
+        "svelte": "^5.55.5",
+        "typescript": "^6.0.3"
+    },
+    "devDependencies": {
+        "@astrojs/check": "^0.9.8",
+        "@astrojs/ts-plugin": "^1.10.7",
+        "@eslint/js": "^10.0.1",
+        "@iconify-json/fa7-regular": "^1.2.3",
+        "@typescript-eslint/eslint-plugin": "^8.59.1",
+        "@typescript-eslint/parser": "^8.59.1",
+        "astro-eslint-parser": "^1.4.0",
+        "eslint": "^10.2.1",
+        "eslint-plugin-astro": "^1.7.0",
+        "eslint-plugin-svelte": "^3.17.1",
+        "oxfmt": "^0.42.0",
+        "oxlint": "^1.62.0",
+        "oxlint-tsgolint": "^0.21.1",
+        "starlight-links-validator": "^0.21.0",
+        "svelte-eslint-parser": "^1.6.0",
+        "typescript-eslint": "^8.59.1",
+        "vite": "^8.0.10"
+    },
+    "engines": {
+        "node": ">=22.12.0"
+    },
+    "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
+    "pnpm": {
+        "overrides": {
+            "yaml": "^2.8.3"
+        }
+    }
 }
