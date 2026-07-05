@@ -11,12 +11,7 @@ REMOTE_PATH = '/data/nginx/www'
 enter = { task = "enter" }
 
 [tasks.enter]
-run = '''
-ls -alt --color
-echo ''
-mise shell-alias
-echo ''
-'''
+depends = ["enter-common"]
 
 [shell_alias]
 als = "mise shell-alias"
