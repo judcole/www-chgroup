@@ -24,7 +24,7 @@ export default defineConfig({
         // Header: "./src/components/Header.astro",
         SiteTitle: "./src/components/SiteTitle.astro",
       },
-      customCss: ["./src/styles/global.css"],
+      customCss: ["./src/styles/global.css", "./src/styles/theme.css"],
       head: [
         {
           tag: "meta",

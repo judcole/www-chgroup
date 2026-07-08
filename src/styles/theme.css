@@ -1,0 +1,78 @@
+/* 2026-07-05 Code Healer Group brand theme for Starlight
+ *
+ * Palette extracted from www.codehealer.com:
+ *   #5C0061 brand purple (headings, links)     — hsl(297, 100%, 19%)
+ *   #8CC63F brand green  (hover, separators)   — hsl(86, 54%, 51%)
+ *   #FFFFFF / #E0E0E0 / #666666 / #000000 neutrals
+ *   Arial, Helvetica, sans-serif type
+ *
+ * These rules are deliberately unlayered so they override the
+ * @catppuccin/starlight plugin, whose styles live in @layer catppuccin.
+ */
+
+:root {
+  --chg-purple: #5c0061;
+  --chg-green: #8cc63f;
+  --sl-font: Arial, Helvetica, sans-serif;
+}
+
+/* Dark mode colors. */
+:root {
+  --sl-color-accent-low: hsl(297, 100%, 16%);
+  --sl-color-accent: hsl(297, 70%, 55%);
+  --sl-color-accent-high: hsl(297, 80%, 84%);
+  --sl-color-white: hsl(297, 25%, 97%);
+  --sl-color-gray-1: hsl(297, 15%, 88%);
+  --sl-color-gray-2: hsl(296, 10%, 74%);
+  --sl-color-gray-3: hsl(296, 8%, 56%);
+  --sl-color-gray-4: hsl(297, 10%, 36%);
+  --sl-color-gray-5: hsl(297, 12%, 23%);
+  --sl-color-gray-6: hsl(297, 14%, 15%);
+  --sl-color-black: hsl(297, 16%, 10%);
+
+  /* Brand green for success/tip states and hover accents */
+  --sl-hue-green: 86;
+  --sl-color-green-low: hsl(86, 40%, 18%);
+  --sl-color-green: var(--chg-green);
+  --sl-color-green-high: hsl(86, 60%, 66%);
+}
+
+/* Light mode colors — mirrors the original site: white page, black text,
+ * purple headings/links, #E0E0E0 panels. */
+:root[data-theme="light"] {
+  --sl-color-accent-low: hsl(297, 60%, 92%);
+  --sl-color-accent: var(--chg-purple);
+  --sl-color-accent-high: hsl(297, 100%, 13%);
+  --sl-color-white: hsl(297, 20%, 10%);
+  --sl-color-gray-1: hsl(297, 14%, 16%);
+  --sl-color-gray-2: hsl(297, 10%, 26%);
+  --sl-color-gray-3: hsl(297, 6%, 40%);
+  --sl-color-gray-4: hsl(296, 5%, 56%);
+  --sl-color-gray-5: hsl(296, 10%, 78%);
+  --sl-color-gray-6: hsl(297, 15%, 90%);
+  --sl-color-gray-7: hsl(297, 20%, 96%);
+  --sl-color-black: #ffffff;
+
+  /* Darkened brand green so it stays readable on white */
+  --sl-hue-green: 86;
+  --sl-color-green-low: hsl(86, 50%, 90%);
+  --sl-color-green: hsl(86, 60%, 34%);
+  --sl-color-green-high: hsl(86, 65%, 26%);
+}
+
+/* Brand type, matching the original site */
+html,
+body {
+  font-family: var(--sl-font);
+}
+
+/* Original site turns links green on hover (a:hover in SOCKWeb.css) */
+.sl-markdown-content a:hover,
+.site-title:hover {
+  color: var(--chg-green);
+}
+
+/* Original site uses green horizontal rules as section separators */
+.sl-markdown-content hr {
+  border-color: var(--chg-green);
+}
