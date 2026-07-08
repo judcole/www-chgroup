@@ -1,4 +1,4 @@
-# 2026-05-10	mise-en-place configuration
+# 2026-07-08	mise-en-place configuration
 
 [env]
 LOCAL_FOLDER = 'dist'
@@ -22,5 +22,6 @@ deploy = "rsync -r -v ${LOCAL_FOLDER}/ ${REMOTE_HOST}:${REMOTE_PATH}/${REMOTE_FO
 dev = "${NPM} run dev"
 fmtchk = "${NPM} run fmt:check"
 fmtfix = "${NPM} run fmt:fix"
+install = "${NPM} install"
 upgrade = "${NPM} run upgrade"
 update = "${NPM} run update"
