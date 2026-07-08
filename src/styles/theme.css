@@ -63,7 +63,7 @@
 /* Brand type, matching the original site */
 html,
 body {
-  font-family: var(--sl-font);
+    font-family: var(--sl-font), sans-serif;
 }
 
 /* Original site turns links green on hover (a:hover in SOCKWeb.css) */
