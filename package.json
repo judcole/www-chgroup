@@ -21,18 +21,18 @@
     },
     "dependencies": {
         "@astrojs/sitemap": "^3.7.3",
-        "@astrojs/starlight": "0.41.5",
+        "@astrojs/starlight": "^0.41.4",
         "@astrojs/svelte": "^9.0.1",
         "@catppuccin/starlight": "^2.1.0",
-        "astro": "7.1.6",
+        "astro": "^7.1.3",
         "astro-icon": "^1.1.5",
         "components": "^0.1.0",
         "starlight-fullview-mode": "^0.2.6",
-        "svelte": "^5.56.8",
+        "svelte": "^5.56.7",
         "typescript": "npm:@typescript/typescript6@^6.0.2"
     },
     "devDependencies": {
-        "@astrojs/check": "0.9.10",
+        "@astrojs/check": "^0.9.9",
         "@astrojs/ts-plugin": "^1.10.10",
         "@eslint/js": "^10.0.1",
         "@iconify-json/fa7-regular": "^1.2.3",
@@ -40,11 +40,11 @@
         "@typescript-eslint/parser": "^8.65.0",
         "@typescript/native": "npm:typescript@^7.0.2",
         "astro-eslint-parser": "^3.0.0",
-        "eslint": "^10.8.0",
+        "eslint": "^10.7.0",
         "eslint-plugin-astro": "^3.0.1",
         "eslint-plugin-svelte": "^3.22.0",
-        "oxfmt": "^0.61.0",
-        "oxlint": "^1.76.0",
+        "oxfmt": "^0.60.0",
+        "oxlint": "^1.75.0",
         "oxlint-tsgolint": "^7.0.2001",
         "starlight-links-validator": "^0.25.2",
         "svelte-eslint-parser": "^1.8.0",
@@ -54,10 +54,5 @@
     "engines": {
         "node": ">=22.12.0"
     },
-    "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
-    "pnpm": {
-        "overrides": {
-            "yaml": "^2.8.3"
-        }
-    }
+    "packageManager": "pnpm@11.18.0+sha512.33d83c77da82f49fba836925c6f1b841181ec3132b670639bd012f7075f5c7cf634c5f870147c19aae7478fac01df09d8892e880454896edd23ee9b33757563c"
 }
